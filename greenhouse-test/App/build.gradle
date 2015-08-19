@@ -12,6 +12,9 @@ repositories {
     mavenCentral()
 }
 
+com.android.ddmlib.DdmPreferences.setTimeOut(30000)
+logger.lifecycle(String.valueOf(com.android.ddmlib.DdmPreferences.getTimeOut()))
+
 android {
     compileSdkVersion 21
     buildToolsVersion "21.1"
